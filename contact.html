@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Elite Shoppy an Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Home ::
+        w3layouts</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+ <!-- HEADER START HERE -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item"><a href data-toggle="modal" data-target="#elegantModalForm"
+                            id="singIn"><i class="fa fa-unlock"></i> Sign In</a></li>
+                    <li class="list-group-item"><a href data-toggle="modal" data-target="#singUpModalForm"><i
+                                class="fa fa-edit"></i>Sign
+                            Up</a></li>
+                    <li class="list-group-item"><i class="fa fa-phone"></i><a>Call : 0559661016</a></li>
+                    <li class="list-group-item"><a href><i class="far fa-envelope"></i>info@example.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Modal Sing In-->
+        <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <!--Content-->
+                <div class="modal-content form-elegant">
+                    <!--Header-->
+                    <div class="header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!--Body-->
+                    <div class="modal-body">
+                        <!--Body-->
+                        <div class="row">
+                            <div class="col-md-7 modal-left">
+                                <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel">
+                                    <strong>Sign in</strong>
+                                    <span>now</span></h3>
+                                <form action="#">
+                                    <div class="md-form style-input">
+                                        <input type="text" id="userName" name="Name" required>
+                                        <label for="Name">Name</label>
+                                    </div>
+
+                                    <div class="md-form style-input">
+                                        <input type="email" id="userEmail" name="Email" required>
+                                        <label for="Email">Email</label>
+                                    </div>
+                                    <input type="submit" value="Sign In" id="login" class="mb-4">
+                                </form>
+                                <div class="footer">
+                                    <div class="icons">
+                                                <ul class="social-nav header model-3d-0 footer-social w3_agile_social top_agile_third">
+                                    <li><a href="#" class="facebook">
+                                    <div class="front"><i class="fab fa-facebook-f"></i></div>
+                                    <div class="back"><i class="fab fa-facebook-f"></i></div>
+                                </a></li>
+                                 <li><a href="#" class="twitter">
+                                    <div class="front"><i class="fab fa-twitter"></i></div>
+                                    <div class="back"><i class="fab fa-twitter"></i></div>
+                                </a></li>
+                                  <li><a href="#" class="instagram">
+                                    <div class="front"><i class="fab fa-instagram"></i></div>
+                                    <div class="back"><i class="fab fa-instagram"></i></div>
+                                </a></li>
+                                      <li><a href="#" class="pinterest">
+                                    <div class="front"><i class="fab fa-linkedin-in"></i></div>
+                                    <div class="back"><i class="fab fa-linkedin-in"></i></div>
+                                </a></li>
+                                          </ul>
+                                    </div>
+
+                                    <p><a href="#" data-toggle="" data-target=""> Don't have an account?</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-5 modal-right">
+                                <img src="images/log_pic.jpeg" style="width: 100%" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <!-- Modal Sing Up-->
+        <div class="modal fade" id="singUpModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <!--Content-->
+                <div class="modal-content form-elegant">
+                    <!--Header-->
+                    <div class="header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!--Body-->
+                    <div class="modal-body">
+                        <!--Body-->
+                        <div class="row">
+                            <div class="col-md-7 modal-left">
+                                <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel">
+                                    <strong>Sign up</strong>
+                                    <span>now</span></h3>
+                                <form action="#">
+                                    <div class="md-form style-input">
+                                        <input type="text" id="name" name="Name" required>
+                                        <label for="Name">Name</label>
+                                    </div>
+
+                                    <div class="md-form style-input">
+                                        <input type="email" id="email" name="Email" required>
+                                        <label for="Email">Email</label>
+                                    </div>
+
+                                    <div class="md-form style-input">
+                                        <input type="password" id="password" name="Password" required>
+                                        <label for="Password">Password</label>
+                                    </div>
+
+                                    <div class="md-form style-input">
+                                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                                        <label for="confirmPassword">Confirm Password</label>
+                                    </div>
+
+                                    <input type="submit" class="mb-4" value="Sign In" id="register">
+                                </form>
+                                <div class="footer">
+                                    <div class="icons">
+                                                <ul class="social-nav header model-3d-0 footer-social w3_agile_social top_agile_third">
+                            <li><a href="#" class="facebook">
+                                    <div class="front"><i class="fab fa-facebook-f"></i></div>
+                                    <div class="back"><i class="fab fa-facebook-f"></i></div>
+                                </a></li>
+                            <li><a href="#" class="twitter">
+                                    <div class="front"><i class="fab fa-twitter"></i></div>
+                                    <div class="back"><i class="fab fa-twitter"></i></div>
+                                </a></li>
+                            <li><a href="#" class="instagram">
+                                    <div class="front"><i class="fab fa-instagram"></i></div>
+                                    <div class="back"><i class="fab fa-instagram"></i></div>
+                                </a></li>
+                            <li><a href="#" class="pinterest">
+                                    <div class="front"><i class="fab fa-linkedin-in"></i></div>
+                                    <div class="back"><i class="fab fa-linkedin-in"></i></div>
+                                </a></li>
+                        </ul>
+                                    </div>
+
+                                    <p><a href="#" data-toggle="" data-target="">By clicking register, I agree to your
+                                            terms</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-5 modal-right">
+                                <img src="images/log_pic.jpeg" style="width: 100%" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                        <form action="#" class="form-inline">
+                            <input class="form-control mr-sm-2 search" type="search" name="search"
+                                placeholder="Search here...">
+                            <button class="btn btn-search"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mar-top">
+                        <h1 class="logo">
+                            <a href="#">
+                                <span>E</span>
+                                lite Shoppy
+                                <i class="fa fa-shopping-bag"></i>
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mar-top text-c">
+                       
+                                            <ul class="social-nav header model-3d-0 footer-social w3_agile_social top_agile_third">
+                            <li class="share"> Share On :</li>
+                            <li><a href="#" class="facebook">
+                                    <div class="front"><i class="fab fa-facebook-f"></i></div>
+                                    <div class="back"><i class="fab fa-facebook-f"></i></div>
+                                </a></li>
+                            <li><a href="#" class="twitter">
+                                    <div class="front"><i class="fab fa-twitter"></i></div>
+                                    <div class="back"><i class="fab fa-twitter"></i></div>
+                                </a></li>
+                            <li><a href="#" class="instagram">
+                                    <div class="front"><i class="fab fa-instagram"></i></div>
+                                    <div class="back"><i class="fab fa-instagram"></i></div>
+                                </a></li>
+                            <li><a href="#" class="pinterest">
+                                    <div class="front"><i class="fab fa-linkedin-in"></i></div>
+                                    <div class="back"><i class="fab fa-linkedin-in"></i></div>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <div class="navbar-left">
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapse_target">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a href="index.html" class="nav-link ">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">about</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                                    data-target="dropdown_target">men's
+                                    wear
+                                    <span class="caret"></span></a>
+                                <div class="dd-mens dropdown-menu" aria-labelledby="dropdown_target">
+                                    <div class="row">
+                                        <div class="col-md-6 dropdown-item">
+                                            <a href="#">
+                                                <img src="images/top2.jpeg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 dropdown-item">
+                                            <ul>
+                                                <li><a href="mens.html">clothing</a></li>
+                                                <li><a href="mens.html">wallets</a></li>
+                                                <li><a href="mens.html">footwear</a></li>
+                                                <li><a href="mens.html">watches</a></li>
+                                                <li><a href="mens.html">accessories</a></li>
+                                                <li><a href="mens.html">bags</a></li>
+                                                <li><a href="mens.html">caps & Hats</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3 dropdown-item">
+                                            <ul>
+                                                <li><a href="mens.html">jewellery</a></li>
+                                                <li><a href="mens.html">sunglasses</a></li>
+                                                <li><a href="mens.html">perfumes</a></li>
+                                                <li><a href="mens.html">beauty</a></li>
+                                                <li><a href="mens.html">shirts</a></li>
+                                                <li><a href="mens.html">sunglasses</a></li>
+                                                <li><a href="mens.html">swimwear</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                                    data-target="dropdown_target">women's
+                                    wear <span class=" caret"></span></a>
+                                <div class="dd-mens dropdown-menu womens" aria-labelledby="dropdown_target">
+                                    <div class="row">
+                                        <div class="col-md-3 dropdown-item">
+                                            <ul>
+                                                <li><a href="womens.html">clothing</a></li>
+                                                <li><a href="womens.html">wallets</a></li>
+                                                <li><a href="womens.html">footwear</a></li>
+                                                <li><a href="womens.html">watches</a></li>
+                                                <li><a href="womens.html">accessories</a></li>
+                                                <li><a href="womens.html">bags</a></li>
+                                                <li><a href="womens.html">caps & Hats</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3 dropdown-item">
+                                            <ul>
+                                                <li><a href="womens.html">jewellery</a></li>
+                                                <li><a href="womens.html">sunglasses</a></li>
+                                                <li><a href="womens.html">perfumes</a></li>
+                                                <li><a href="womens.html">beauty</a></li>
+                                                <li><a href="womens.html">shirts</a></li>
+                                                <li><a href="womens.html">sunglasses</a></li>
+                                                <li><a href="womens.html">swimwear</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6 dropdown-item">
+                                            <a href="#">
+                                                <img src="images/top1.jpeg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                                    data-target="dropdown_target">short
+                                    codes
+                                    <span class="caret"></span></a>
+                                <div class="dropdown-menu short" aria-labelledby="dropdown_target">
+                                    <a href class="dropdown-item">web icons</a>
+                                    <a href class="dropdown-item">typography</a>
+                                </div>
+
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-right">
+                    <a href="#" class="nav-bar-brand"><i class="fas fa-cart-arrow-down"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER END HERE -->
+    <!-- ABOUT US START HERE -->
+    <div class="about-us">
+        <div class="container">
+            <h3>C<span>ontact Us </span></h3>
+            <ul class="w3_short">
+                <li><a href="index.html">Home</a><span>|</span></li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+    <!-- ABOUT US END HERE -->
+    <!-- MAIN START HERE -->
+    <main>
+        <!-- ADDRESS START HERE -->
+        <div class="call-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-12 col-xs-4 col-lg-4">
+                        <address>
+                            <i class="fa fa-map-marker"></i>
+                            <h4>ADDRESS</h4>
+                            <p>12K Street, 45 Building Road</p>
+                            <p>California, USA.</p>
+                        </address>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-12 col-xs-4 col-lg-4">
+                        <address>
+                            <i class="fa fa-phone"></i>
+                            <h4>CALL US</h4>
+                            <p>+1234 758 839</p>
+                            <p>+1273 748 730</p>
+                        </address>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-12 col-xs-4 col-lg-4">
+                        <address>
+                            <i class="fas fa-envelope"></i>
+                            <h4>EMAIL</h4>
+                            <a href="#">
+                                <p>info@example1.com</p>
+                            </a>
+                            <a href="#">
+                                <p>info@example2.com</p>
+                            </a>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ADDRESS END HERE -->
+        <!-- MAP START HERE -->
+        <iframe id="embedMap" class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127171.6105385602!2d-122.52597745467659!3d37.76060720095923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2s!4v1553253201633"
+            width="1345" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <!-- MAP END HERE -->
+        <!-- FOR-MORE START HERE -->
+        <div class="for-more">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-12 col-sm-12 col-md-12">
+                        <h4>For More <span>Information</span></h4>
+                        <div class="d-flex m-t">
+                            <i class="fas fa-phone-volume"></i>
+                            <div class="p-l">
+                                <p>Telephone </p><span>+1 (100)222-23-33</span>
+                            </div>
+                        </div>
+                        <div class="d-flex m-t">
+                            <i class="far fa-envelope"></i>
+                            <div class="p-l">
+                                <p>Mail </p><a href="mailto:info@example.com">info@example.com</a>
+                            </div>
+                        </div>
+                        <div class="d-flex m-t">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="p-l">
+                                <p>Location</p><span>7784 Diamonds street, California, US.</span>
+                            </div>
+                        </div>
+                        <ul class="social-nav header model-3d-0 footer-social w3_agile_social top_agile_third">
+                            <li class="share"> Share On :</li>
+                            <li><a href="#" class="facebook">
+                                    <div class="front"><i class="fab fa-facebook-f"></i></div>
+                                    <div class="back"><i class="fab fa-facebook-f"></i></div>
+                                </a></li>
+                            <li><a href="#" class="twitter">
+                                    <div class="front"><i class="fab fa-twitter"></i></div>
+                                    <div class="back"><i class="fab fa-twitter"></i></div>
+                                </a></li>
+                            <li><a href="#" class="instagram">
+                                    <div class="front"><i class="fab fa-instagram"></i></div>
+                                    <div class="back"><i class="fab fa-instagram"></i></div>
+                                </a></li>
+                            <li><a href="#" class="pinterest">
+                                    <div class="front"><i class="fab fa-linkedin-in"></i></div>
+                                    <div class="back"><i class="fab fa-linkedin-in"></i></div>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-12 col-sm-12 col-md-12 contact-form">
+                        <h4>Contact <span>Form</span></h4>
+                        <form action="#" method="post">
+                            <div class="styled-input">
+                                <input type="text" name="Name" required="">
+                                <label>Name</label>
+                            </div>
+                            <div class="styled-input">
+                                <input type="email" name="Email" required="">
+                                <label>Email</label>
+                            </div>
+                            <div class="styled-input">
+                                <input type="text" name="Subject" required="">
+                                <label>Subject</label>
+                            </div>
+                            <div class="styled-input">
+                                <textarea name="Message" required=""></textarea>
+                                <label>Message</label>
+                            </div>
+                            <input type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FOR-MORE END HERE -->
+    </main>
+    <!-- MAIN END HERE -->
+    <!-- COUPONS START HERE-->
+    <div class="coupons">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="coupon_line d-flex">
+                        <div class="coupons-i">
+                            <div class="coupon_ovarlay"></div>
+                            <i class="fa fa-truck" aria-hidden="true"></i>
+                        </div>
+                        <div class="coupons-text">
+                            <h3>FREE SHIPPING</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="coupon_line d-flex">
+                        <div class="coupons-i">
+                            <div class="coupon_ovarlay"></div>
+                            <i class="fa fa-headphones" aria-hidden="true"></i>
+                        </div>
+                        <div class="coupons-text">
+                            <h3>24/7 SUPPORT</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="coupon_line d-flex">
+                        <div class="coupons-i">
+                            <div class="coupon_ovarlay"></div>
+                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                        </div>
+                        <div class="coupons-text">
+                            <h3>MONEY BACK GUARANTEE</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="coupon_line d-flex">
+                        <div class="coupons-i">
+                            <div class="coupon_ovarlay"></div>
+                            <i class="fa fa-gift" aria-hidden="true"></i>
+                        </div>
+                        <div class="coupons-text">
+                            <h3>FREE GIFT COUPONS</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- COUPONS END HERE-->
+    <!-- FOOTER START HERE -->
+    <footer>
+        <div class="footer-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-12">
+                        <div class="log-info">
+                            <h2>
+                                <a href="#">
+                                    <span>E</span>lite Shoppy
+                                </a>
+                            </h2>
+                            <p>Lorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                                modi
+                                tempora.</p>
+                        </div>
+                        <ul class="social-nav model-3d-0 footer-social w3_agile_social top_agile_third">
+                            <li><a href="#" class="facebook">
+                                    <div class="front"><i class="fab fa-facebook-f"></i></div>
+                                    <div class="back"><i class="fab fa-facebook-f"></i></div>
+                                </a></li>
+                            <li><a href="#" class="twitter">
+                                    <div class="front"><i class="fab fa-twitter"></i></div>
+                                    <div class="back"><i class="fab fa-twitter"></i></div>
+                                </a></li>
+                            <li><a href="#" class="instagram">
+                                    <div class="front"><i class="fab fa-instagram"></i></div>
+                                    <div class="back"><i class="fab fa-instagram"></i></div>
+                                </a></li>
+                            <li><a href="#" class="pinterest">
+                                    <div class="front"><i class="fab fa-linkedin-in"></i></div>
+                                    <div class="back"><i class="fab fa-linkedin-in"></i></div>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 our">
+                        <h4>our <span>information</span></h4>
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">men's wear</a></li>
+                            <li><a href="#">women's wear</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">short codes</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 store">
+                        <h4>store <span>information</span></h4>
+                        <address class="d-flex">
+                            <div class="left-address"><i class="fas fa-phone"></i></div>
+                            <div class="right-address">
+                                <h6>phone number</h6>
+                                <p>+944 55 966 10 16</p>
+                        </address>
+                        <address class="d-flex">
+                            <div class="left-address"><i class="fas fa-envelope"></i></div>
+                            <div class="right-address">
+                                <h6>email address</h6>
+                                <p>Email :<a href="mailto:example@email.com"> mail@example.com</a></p>
+                            </div>
+                        </address>
+                        <address class="d-flex">
+                            <div class="left-address"><i class="fas fa-map-marker"></i></div>
+                            <div class="right-address">
+                                <h6>location</h6>
+                                <p>Broome St, NY 10002, California,USA</p>
+                            </div>
+                        </address>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-6 p-l">
+                        <div class="img-posts">
+                            <h4>flickr <span>posts</span></h4>
+                            <ul>
+                                <li><img src="images/t1.jpeg" alt=""></li>
+                                <li><img src="images/t2.jpeg" alt=""></li>
+                                <li><img src="images/t3.jpeg" alt=""></li>
+                                <li><img src="images/t4.jpeg" alt=""></li>
+                                <li><img src="images/t1.jpeg" alt=""></li>
+                                <li><img src="images/t2.jpeg" alt=""></li>
+                                <li><img src="images/t3.jpeg" alt=""></li>
+                                <li><img src="images/t2.jpeg" alt=""></li>
+                                <li><img src="images/t4.jpeg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-search">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>sing up for newsletter&nbsp;!</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" placeholder="Enter your email...">
+                            <input type="submit">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copy">
+                    <p class="copy-right">&copy; 2017 Elite shoppy. All rights reserved | Design by <a
+                            href="http://w3layouts.com/">W3layouts</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END HERE -->
+
+    <script src="js/main.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

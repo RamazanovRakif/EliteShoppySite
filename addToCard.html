@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .miniCartForm {
+        display: block;
+        position: relative;
+        width: 600px;
+        height: 450px;
+        margin: 50px auto;
+        padding: 10px 20px 40px;
+        background: #fbfbfb;
+        color: #333;
+    }
+
+    #closeForm {
+        float: right;
+        margin: -10px -10px 0;
+        padding: 10px;
+        background: none;
+        border: none;
+        font-size: 15px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    #itemName {
+        display: block;
+    }
+
+    #miniCart {
+        width: 500px;
+        margin: 20px auto;
+        padding: 10px 10px 0 10px;
+        list-style-type: none;
+        background: #fff;
+        border: 1px solid #ccc;
+    }
+
+    #itemCount {
+        /* width: 30px;
+        height: auto;
+        padding: 2px 4px; */
+        font-size: 13px;
+        /* text-align: right; */
+    }
+
+    #itemRemove {
+        width: 20px;
+        height: 20px;
+        margin: 2px 0 0;
+        background: black;
+        color: #fff;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    #item {
+        border-bottom: 1px solid #999;
+    }
+
+    .activeForm {
+        display: block;
+    }
+
+    #discount {
+        color: #999;
+    }
+</style>
+
+<body>
+    <div>
+        <ul>
+            <li><a class="cart-name" href="#">Formal Blue Shirt</a></li>
+            <li><a class="cart-price" href="#">$1.25</a></li>
+            <li><a class="add-to-cart" data-price="1.25" data-name="Formal Blue Shirt" href="#">Add</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li><a class="cart-name" href="#">Dark Blue Track Pants</a></li>
+            <li><a class="cart-price" href="#">$5.55</a></li>
+            <li><a class="add-to-cart" data-name="Dark Blue Track Pants" data-price="5.55" href="#">Add</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li><a class="cart-name" href="#">Gabi Full Sleeve Sweatshirt</a></li>
+            <li><a class="cart-price" href="#">$3.45</a></li>
+            <li><a class="add-to-cart" data-name="Gabi Full Sleeve Sweatshirt" data-price="3.45" href="#">Add</a></li>
+        </ul>
+    </div>
+    <div id="miniCartForm" class="miniCartForm">
+        <button id="closeForm">x</button>
+        <ul id="miniCart">
+
+        </ul>
+        <hr>
+        <h4>Total Price : $ <span class="total-price"></span></h4>
+    </div>
+
+
+    <script>
+        $(".add-to-cart").click(function (event) {
+            event.preventDefault();
+            let name = $(this).attr("data-name");
+            let price = Number($(this).attr("data-price"));
+
+            addElementToCart(name, price, 1);
+            displayCart();
+        });
+
+        function displayCart() {
+            let cartArray = listCart();
+            let output = "";
+            for (let i in cartArray) {
+                output += '<li id = "item">';
+                output += '<div class = "row">';
+                output += '<div class = "col-md-7">';
+                output += '<label id = "itemName">' + cartArray[i].name + '</label>';
+                output += '<label id = "discount"> Discount $' + cartArray[i].count + '</label>';
+                output += '</div>';
+                output += '<div class = "col-md-1">';
+                output += '<label id = "itemCount">' + cartArray[i].count + '</label>';
+                output += '</div>';
+                output += '<div class = "col-md-1">';
+                output += '<button id = "itemRemove" data-name = "' + cartArray[i].name + '">x</button>'
+                output += '</div>';
+                output += '<div class = "col-md-3">';
+                output += '<label id = "itemPrice">$' + cartArray[i].total + '</label>';
+                output += '</div>';
+                output += '</div>';
+                output += '</li>';
+                output += '</div>';
+            }
+            $("#miniCart").html(output);
+            $(".total-price").html(totalCart);
+        }
+        $("#miniCart").on("click", "#itemRemove", function (event) {
+            event.preventDefault();
+            let name = $(this).attr("data-name");
+            removeElementFromCartAll(name);
+            displayCart();
+        });
+
+
+    </script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="addTo.js"></script>
+</body>
+
+</html>
